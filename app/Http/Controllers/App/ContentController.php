@@ -29,7 +29,7 @@ class ContentController extends ConfigController
             }
             if($category==2)
             {
-                $pages=$modal->orderBy('number','asc')->paginate(1);
+                $pages=$modal->orderBy('number','asc')->paginate(3);
                 $id=Menu::where('link',$menu)->first()->id;
                 $comment=Comment::where('menuid',$id)->get();
                 return $pages->count()>0 ? view('app.pages.multi.index')->with('pages',$pages)->with('comment',$comment) : back();
