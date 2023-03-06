@@ -55,6 +55,6 @@
   
   <!-- Custom scripts -->
   <script src="{{ asset('panel/assets/js/app-script.js') }}"></script>
-  
+  <script>console.log('git-action')</script>
 </body>
 </html>
